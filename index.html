@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Күйші Қали — Еске алу және тағзым кітабы</title>
+<meta name="description" content="Мусин Тлегеннің «Күйші Қали» кітабы: Қазақ КСР-інің халық артисі, күйші Қали Жантілеуовтің (1902–1993) өмірі мен өнері туралы.">
+<meta property="og:type" content="book">
+<meta property="og:title" content="Күйші Қали — Халықтың жаны, күйдің сазы">
+<meta property="og:description" content="Қали Жантілеуовтің (1902–1993) өмірі мен өнеріне арналған еске алу және тағзым кітабы. Авторы: Мусин Тлеген.">
+<meta name="theme-color" content="#07121f">
+<!-- Превью в WhatsApp/Telegram: когда сайт будет опубликован, впишите полный адрес картинки, например:
+<meta property="og:image" content="https://ВАШ-ЛОГИН.github.io/НАЗВАНИЕ-РЕПОЗИТОРИЯ/book-cover.jpg"> -->
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2307121f'/%3E%3Ctext x='32' y='46' font-size='42' text-anchor='middle' font-family='Georgia,serif' font-weight='700' fill='%23cfa94e'%3E%D2%9A%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,500;0,700;1,400&family=Noto+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#07121f; --bg2:#0c1b2e; --card:#10233a;
+  --gold:#cfa94e; --gold2:#e8cf8a;
+  --ink:#f1ebdb; --mute:#a9b6c9;
+  --line:rgba(207,169,78,.28);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--ink);font:400 1.0625rem/1.7 "Noto Sans",system-ui,sans-serif}
+h1,h2,h3,.serif{font-family:"Noto Serif",Georgia,serif;font-weight:700;line-height:1.2}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:88px 0}
+section+section{border-top:1px solid var(--line)}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:12px}
+.lead{color:var(--mute);max-width:60ch;margin-bottom:44px}
+.orn{display:flex;align-items:center;gap:12px;color:var(--gold);margin:18px 0 36px}
+.orn::before,.orn::after{content:"";height:1px;background:var(--line);flex:0 0 56px}
+.orn i{width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(7,18,31,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{text-decoration:none;font-family:"Noto Serif",serif;font-weight:700;color:var(--gold2);letter-spacing:.02em}
+nav{display:flex;gap:28px}
+nav a{text-decoration:none;color:var(--mute);font-size:.95rem;padding:4px 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+nav a:hover{color:var(--gold2);border-color:var(--gold)}
+#burger{display:none;background:none;border:1px solid var(--line);color:var(--gold2);padding:8px 12px;border-radius:6px;font-size:1rem;cursor:pointer}
+@media(max-width:820px){
+ #burger{display:block}
+ nav{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg2);border-bottom:1px solid var(--line);padding:8px 20px 16px}
+ nav.open{display:flex}
+ nav a{padding:12px 0;border-bottom:1px solid var(--line)}
+}
+
+/* hero */
+.hero{padding:72px 0 80px;background:radial-gradient(900px 500px at 85% 20%,rgba(207,169,78,.13),transparent 60%),var(--bg)}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.years{font-family:"Noto Serif",serif;font-size:clamp(3.2rem,9vw,6.4rem);font-weight:500;line-height:1;color:var(--gold);letter-spacing:-.01em}
+.years span{opacity:.55}
+.hero h1{font-size:clamp(1.5rem,3.4vw,2.2rem);margin:20px 0 14px;font-weight:500}
+.hero h1 b{display:block;font-size:1.25em;font-weight:700;color:var(--gold2)}
+.quote{font-family:"Noto Serif",serif;font-style:italic;color:var(--ink);border-left:2px solid var(--gold);padding-left:16px;margin:22px 0}
+.hero p.d{color:var(--mute);max-width:56ch}
+.by{margin-top:18px;color:var(--mute);font-size:.95rem}.by b{color:var(--gold2);font-weight:600}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;text-decoration:none;padding:13px 24px;border-radius:4px;font-weight:600;font-size:.95rem;transition:background .2s,color .2s}
+.btn.p{background:var(--gold);color:#07121f}.btn.p:hover{background:var(--gold2)}
+.btn.s{border:1px solid var(--gold);color:var(--gold2)}.btn.s:hover{background:rgba(207,169,78,.12)}
+.cover{justify-self:center;max-width:340px;width:100%;position:relative;animation:rise .9s ease both}
+.cover::before{content:"";position:absolute;inset:-14px -14px 14px 14px;border:1px solid var(--gold);border-radius:4px}
+.cover img{position:relative;width:100%;height:auto;border-radius:4px;box-shadow:0 24px 60px rgba(0,0,0,.6)}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr;gap:44px}.cover{order:-1;max-width:260px}section{padding:64px 0}}
+
+/* about */
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:6px;margin-bottom:56px}
+.facts div{padding:26px 22px;text-align:center}
+.facts div+div{border-left:1px solid var(--line)}
+.facts .n{font-family:"Noto Serif",serif;font-size:clamp(1.55rem,2.6vw,1.9rem);color:var(--gold2);font-weight:700;display:block;line-height:1.2}
+.facts small{color:var(--mute);font-size:.92rem;display:block;margin-top:6px}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.cols h3{font-size:1.25rem;color:var(--gold2);margin-bottom:10px;padding-top:14px;border-top:2px solid var(--gold)}
+.cols p{color:var(--ink);opacity:.88;font-size:1rem}
+@media(max-width:820px){.cols{grid-template-columns:1fr;gap:32px}.facts{grid-template-columns:1fr}.facts div+div{border-left:0;border-top:1px solid var(--line)}}
+
+/* timeline */
+.tl{list-style:none;padding:0;position:relative;margin-left:8px}
+.tl::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:1px;background:var(--gold)}
+.tl li{position:relative;padding:0 0 40px 34px}
+.tl li::before{content:"";position:absolute;left:-5px;top:8px;width:11px;height:11px;background:var(--bg);border:1px solid var(--gold);transform:rotate(45deg)}
+.tl li:last-child{padding-bottom:0}
+.tl time{font-family:"Noto Serif",serif;color:var(--gold);font-size:1.5rem;font-weight:700;display:block}
+.tl h3{font-size:1.2rem;margin:2px 0 6px}
+.tl p{color:var(--ink);opacity:.88;max-width:64ch}
+
+/* media */
+.sub{font-size:1.35rem;margin:56px 0 18px;color:var(--gold2)}
+.sub:first-of-type{margin-top:0}
+.videos{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.vid .box{position:relative;aspect-ratio:16/9;background:#000;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+.vid button{all:unset;cursor:pointer;position:absolute;inset:0}
+.vid button:focus-visible{outline:2px solid var(--gold2);outline-offset:-4px}
+.vid button img{width:100%;height:100%;object-fit:cover;opacity:.8;transition:opacity .2s}
+.vid button:hover img{opacity:1}
+.vid button::after{content:"▶";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:var(--gold);color:#07121f;display:grid;place-items:center;font-size:1.3rem;padding-left:4px}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid h4{font-family:"Noto Serif",serif;font-size:1.05rem;margin:12px 0 2px}
+.vid a.alt{color:var(--mute);font-size:.88rem}
+.vid a.alt:hover{color:var(--gold2)}
+
+.gal{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:28px;align-items:start}
+.gal button{all:unset;cursor:zoom-in;display:block;width:100%}
+.gal button:focus-visible{outline:2px solid var(--gold2);outline-offset:4px}
+.gal img{width:100%;height:auto;border:1px solid var(--line);border-radius:6px}
+.gal span{display:block;margin-top:10px;color:var(--mute);font-size:.92rem;line-height:1.45}
+
+#lb{position:fixed;inset:0;z-index:50;background:rgba(3,8,14,.95);display:none;align-items:center;justify-content:center;padding:24px;flex-direction:column;gap:14px}
+#lb.on{display:flex}
+#lb img{max-height:78vh;border-radius:4px}
+#lb p{color:var(--ink);text-align:center;max-width:60ch}
+#lb button{position:absolute;top:16px;right:20px;background:none;border:1px solid var(--line);color:var(--ink);font-size:1.4rem;width:44px;height:44px;border-radius:50%;cursor:pointer}
+@media(max-width:820px){.videos,.gal{grid-template-columns:1fr}.gal figure:first-child{max-width:380px}}
+
+/* quotes */
+.q{margin:0 0 56px;max-width:760px}
+.q p{font-family:"Noto Serif",serif;font-style:italic;font-size:clamp(1.25rem,2.6vw,1.65rem);line-height:1.55}
+.q p::before{content:"«";color:var(--gold);margin-right:2px}.q p::after{content:"»";color:var(--gold);margin-left:2px}
+.q cite{display:block;margin-top:14px;font-style:normal;color:var(--gold2);font-weight:600}
+.q cite small{display:block;color:var(--mute);font-weight:400}
+.q:nth-of-type(2){margin-left:auto;text-align:right;margin-bottom:0}
+@media(max-width:820px){.q:nth-of-type(2){text-align:left}}
+
+/* book */
+.book{display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:start}
+.book img{height:auto;border-radius:4px;box-shadow:0 18px 44px rgba(0,0,0,.55);border:1px solid var(--line)}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:10px 22px;margin-top:22px;border-top:1px solid var(--line);padding-top:20px}
+dt{color:var(--mute)}dd{margin:0}
+@media(max-width:820px){.book{grid-template-columns:1fr}.book img{max-width:220px}dl{grid-template-columns:1fr;gap:2px}dd{margin-bottom:12px}}
+/* contact */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:8px}
+.card{display:block;text-decoration:none;padding:22px 24px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:4px;transition:background .2s,border-color .2s}
+.card:hover{background:var(--bg2);border-left-color:var(--gold2)}
+.card small{display:block;color:var(--mute);font-size:.92rem}
+.card b{display:block;font-family:"Noto Serif",serif;font-size:1.2rem;line-height:1.35;overflow-wrap:anywhere}
+nav a.on{color:var(--gold2);border-color:var(--gold)}
+footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--mute);font-size:.85rem}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="wrap bar">
+  <a class="brand" href="#top">Қали Жантілеуов</a>
+  <button id="burger" aria-label="Мәзір" aria-expanded="false" aria-controls="nav">Мәзір</button>
+  <nav id="nav" aria-label="Негізгі мәзір">
+   <a href="#about">Кітап туралы</a>
+   <a href="#biography">Өмірі</a>
+   <a href="#media">Бейне және суреттер</a>
+   <a href="#excerpt">Жұбанов сөзі</a>
+   <a href="#book">Кітап</a>
+   <a href="#contact">Байланыс</a>
+  </nav>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap">
+  <div>
+   <div class="years">1902<span>–</span>1993</div>
+   <h1>Еске алу және тағзым кітабы <b>Күйші Қали</b></h1>
+   <p class="quote">Күй – халықтың жаны, күйші – сол жанның жыршысы</p>
+   <p class="d">Қазақ КСР-інің халық артисі, Батыс Қазақстан күйшілік мектебінің дәулескер өкілі Қали Жантілеуовтің өмірі мен өнеріне арналған кітап.</p>
+   <p class="by">Авторы: <b>Мусин Тлеген</b></p>
+   <div class="btns">
+    <a class="btn p" href="#media">Бейнелерді көру</a>
+    <a class="btn s" href="#about">Кітап туралы</a>
+   </div>
+  </div>
+  <div class="cover"><img src="book-cover.jpg" alt="Кітап мұқабасы: Күйші Қали. Халықтың жаны, күйдің сазы. Мусин Тлеген" width="997" height="1400"></div>
+ </div>
+</section>
+
+<section id="about">
+ <div class="wrap">
+  <h2>Кітап туралы</h2>
+  <div class="orn"><i></i></div>
+  <div class="facts">
+   <div><span class="n">1902–1993</span><small>өмір сүрген жылдары</small></div>
+   <div><span class="n">Қырық жылға жуық</span><small>ұстаздық жолы</small></div>
+   <div><span class="n">1934</span><small>Алматыдағы слетте бірінші жүлде</small></div>
+  </div>
+  <div class="cols">
+   <div><h3>Дәстүрлі күй мектебі</h3><p>Қали Жантілеуов Мәменнің алдында отырып күй үйреніп, Құрманғазы мен Дәулеткерей мұрасының көне нұсқаларын жадында сақтады және оларды кейінгі ұрпаққа жеткізді.</p></div>
+   <div><h3>Оркестр және ұстаздық</h3><p>Ұлт аспаптары оркестрінің тұңғыш құрамында болып, ұзақ жылдар домбырашылар тобының концертмейстері болды. Алдымен Алматы музыкалық-драма техникумында, кейін консерваторияда сабақ берді.</p></div>
+   <div><h3>Еске алу мен тағзым</h3><p>Кітапта күйшінің өмір жолы, әулет шежіресі, соғыс жылдарындағы өнері, шәкірттері мен туыстарының естеліктері және қазақ музыкасындағы орны баяндалады.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="biography">
+ <div class="wrap">
+  <h2>Өмір жолы мен мұрасы</h2>
+  <div class="orn"><i></i></div>
+  <ol class="tl">
+   <li><time>1902</time><h3>Дүниеге келуі</h3><p>8 қаңтарда қазіргі Батыс Қазақстан облысының Жаңақала ауданында, қарапайым шаруа отбасында дүниеге келді. Домбыраны бес жасынан қолға алды.</p></li>
+   <li><time>1934</time><h3>Алматыдағы республикалық слет</h3><p>Өнерпаздардың бірінші слетінде Құрманғазының «Адай» күйін орындап, бірінші жүлде алды. Көп ұзамай Ахмет Жұбанов құрған тұңғыш ұлт аспаптары оркестрінің құрамына енді.</p></li>
+   <li><time>1941–1945</time><h3>Соғыс жылдарындағы өнер</h3><p>Жамбыл атындағы Қазақ мемлекеттік филармониясының солисі ретінде әскери бөлімдер мен госпитальдарда концерт қойды. «Ұлы Отан соғысындағы ерен еңбегі үшін» медалімен марапатталды.</p></li>
+   <li><time>1954</time><h3>Халық артисі</h3><p>3 желтоқсандағы Жарлықпен «Қазақ КСР-інің халық артисі» құрметті атағына ие болды. 1942 жылы оған Қазақ КСР-інің еңбек сіңірген артисі атағы берілген еді.</p></li>
+   <li><time>Ұстаздық жылдары</time><h3>Шәкірттері</h3><p>Қырық жылға жуық ұстаздық етті. Қали мектебінен тәлім алған немесе оның ықпалын көрген өнер иелерінің қатарында Шамғон Қажығалиев, Нұрғиса Тілендиев, Қаршыға Ахмедияров және басқалар аталады.</p></li>
+   <li><time>1990</time><h3>Туған жерге оралу</h3><p>Жаңақалаға қайтып, өмірінің соңғы жылдарын үлкен қызы Мұстақиманың шаңырағында өткізді.</p></li>
+   <li><time>1993</time><h3>Ақтық сапар</h3><p>Туған топырағында өмірден өтті. Қоштасу сәтінде Қазақстанның халық артисі Қаршыға Ахмедияров қоштасу күйін тартты.</p></li>
+  </ol>
+ </div>
+</section>
+
+<section id="media">
+ <div class="wrap">
+  <h2>Бейне және суреттер</h2>
+  <p class="lead">Қали Жантілеуов туралы бейнематериалдар мен мұрағаттық суреттер.</p>
+
+  <h3 class="sub">Бейнежазбалар</h3>
+  <div class="videos">
+   <div class="vid"><div class="box"><button data-id="rMHr89rWoqs" aria-label="Бейнені ашу: бейне 1"><img loading="lazy" src="https://i.ytimg.com/vi/rMHr89rWoqs/hqdefault.jpg" alt="" width="480" height="360"></button></div><h4>Бейне 1</h4><a class="alt" href="https://youtu.be/rMHr89rWoqs" target="_blank" rel="noopener">YouTube-та ашу</a></div>
+   <div class="vid"><div class="box"><button data-id="PpYlFy4nKhc" aria-label="Бейнені ашу: бейне 2"><img loading="lazy" src="https://i.ytimg.com/vi/PpYlFy4nKhc/hqdefault.jpg" alt="" width="480" height="360"></button></div><h4>Бейне 2</h4><a class="alt" href="https://youtu.be/PpYlFy4nKhc" target="_blank" rel="noopener">YouTube-та ашу</a></div>
+   <div class="vid"><div class="box"><button data-id="xDCvUGC4sqY" aria-label="Бейнені ашу: бейне 3"><img loading="lazy" src="https://i.ytimg.com/vi/xDCvUGC4sqY/hqdefault.jpg" alt="" width="480" height="360"></button></div><h4>Бейне 3</h4><a class="alt" href="https://youtu.be/xDCvUGC4sqY" target="_blank" rel="noopener">YouTube-та ашу</a></div>
+   <div class="vid"><div class="box"><button data-id="o51Uz8Rdii8" aria-label="Бейнені ашу: бейне 4"><img loading="lazy" src="https://i.ytimg.com/vi/o51Uz8Rdii8/hqdefault.jpg" alt="" width="480" height="360"></button></div><h4>Бейне 4</h4><a class="alt" href="https://youtu.be/o51Uz8Rdii8" target="_blank" rel="noopener">YouTube-та ашу</a></div>
+  </div>
+
+  <h3 class="sub">Суреттер</h3>
+  <div class="gal">
+   <figure><button data-cap="Қали Жантілеуов — домбырашылар концертмейстері. Оркестрмен бірге майданда да, тылда да концерттермен сарбаздарды қолдады"><img loading="lazy" src="gallery-2.jpg" alt="Қали Жантілеуовтің қара-ақ портреті, ордендер мен домбыра белгісі бар плакат" width="1000" height="1215"><span>Қали Жантілеуов — домбырашылар концертмейстері. Оркестрмен бірге майданда да, тылда да концерттермен сарбаздарды қолдады</span></button></figure>
+   <figure><button data-cap="«Жарқын бейне» бағдарламасынан кадр"><img loading="lazy" src="gallery-1.jpg" alt="«Жарқын бейне» телебағдарламасынан кадр" width="876" height="492"><span>«Жарқын бейне» бағдарламасынан кадр</span></button></figure>
+  </div>
+ </div>
+</section>
+
+<section id="excerpt">
+ <div class="wrap">
+  <h2>Ахмет Жұбанов Қали туралы</h2>
+  <div class="orn"><i></i></div>
+  <blockquote class="q"><p>Біздің Қалес (Қали) болмаса Құрманғазының «Адайы» да, Құрекеңнің өзі де болмас еді... Құрманғазыны бізге, біздің бүгінгі ұрпаққа табыс еткен Қалеске мың да бір рахмет.</p><cite>Ахмет Жұбанов<small>академик · «Күйші Қали» кітабы, 40-бет</small></cite></blockquote>
+  <blockquote class="q"><p>Қали борандатқан тез екпінді күйлердің орындаушысы. «Адай», «Терісқақпай» сияқты күйлерді әлі күнге Қалидай ешкім тарта алмайды десек, өтірікші болмаймыз.</p><cite>Ахмет Жұбанов<small>академик · «Күйші Қали» кітабы, 41-бет</small></cite></blockquote>
+ </div>
+</section>
+
+<section id="book">
+ <div class="wrap book">
+  <img src="book-cover.jpg" alt="Кітап мұқабасы" loading="lazy" width="997" height="1400">
+  <div>
+   <h2>Кітап туралы мәлімет</h2>
+   <p>Кітап қазақтың дәстүрлі күй өнерінің XX ғасырдағы көрнекті тұлғасы Қали Жантілеуовтің өмірі мен шығармашылығына арналған. Автор мақалаларға, сұхбаттарға, құжаттық және отбасылық деректерге сүйеніп, күйшінің өнерін де, адами болмысын да ұрпаққа жеткізеді.</p>
+   <dl>
+    <dt>Атауы</dt><dd>Күйші Қали. Еске алу және тағзым кітабы</dd>
+    <dt>Авторы</dt><dd>Мусин Тлеген</dd>
+    <dt>Баспа</dt><dd>«Жебе» баспа үйі, Шымкент, 2026</dd>
+    <dt>ISBN</dt><dd>978-601-7713-25-6</dd>
+    <dt>Тілі</dt><dd>Қазақша</dd>
+   </dl>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap">
+  <h2>Байланыс</h2>
+  <div class="orn"><i></i></div>
+  <p class="lead">Кітап туралы сұрақ қою немесе оқырман пікірін жолдау үшін автормен байланысыңыз.</p>
+  <div class="cards">
+   <a class="card" href="mailto:tlegen351@gmail.com"><small>Электрондық пошта</small><b>tlegen351@gmail.com</b></a>
+   <a class="card" href="tel:+77781290668"><small>Телефон</small><b>+7 778 129 0668</b></a>
+   <a class="card" href="https://wa.me/77781290668" target="_blank" rel="noopener"><small>WhatsApp</small><b>Хабарлама жазу</b></a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 «Күйші Қали. Еске алу және тағзым кітабы» — Мусин Тлеген. Барлық құқықтар қорғалған.</div></footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Сурет"><button aria-label="Жабу">×</button><img alt=""><p></p></div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+
+// menu
+const nav=$('#nav'),bg=$('#burger');
+bg.onclick=()=>{const o=nav.classList.toggle('open');bg.setAttribute('aria-expanded',o)};
+$$('#nav a').forEach(a=>a.onclick=()=>{nav.classList.remove('open');bg.setAttribute('aria-expanded',false)});
+
+// highlight the menu item of the section being read
+if('IntersectionObserver' in window){
+  const links=[...$$('#nav a')];
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id));
+  }),{rootMargin:'-45% 0px -50% 0px'});
+  links.forEach(a=>{const s=$(a.getAttribute('href'));if(s)io.observe(s)});
+}
+
+// video: load the player only after a click (page stays fast)
+$$('.vid button').forEach(b=>b.onclick=()=>{
+  const i=document.createElement('iframe');
+  i.src='https://www.youtube-nocookie.com/embed/'+b.dataset.id+'?autoplay=1&rel=0';
+  i.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
+  i.allowFullscreen=true;
+  i.title=b.getAttribute('aria-label');
+  b.replaceWith(i);
+});
+
+// photo viewer
+const lb=$('#lb'),li=lb.querySelector('img'),lp=lb.querySelector('p');
+let opener=null;
+function closeLb(){lb.classList.remove('on');if(opener)opener.focus()}
+$$('.gal button').forEach(b=>b.onclick=()=>{
+  opener=b;
+  li.src=b.querySelector('img').src;
+  li.alt=b.querySelector('img').alt;
+  lp.textContent=b.dataset.cap;
+  lb.classList.add('on');
+  lb.querySelector('button').focus();
+});
+lb.onclick=e=>{if(e.target!==li)closeLb()};
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&lb.classList.contains('on'))closeLb()});
+</script>
+</body>
+</html>
